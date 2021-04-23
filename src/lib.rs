@@ -118,6 +118,7 @@ pub fn search_insensitive<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
         .filter(|line| line.to_lowercase().contains(&query))
         .collect()
 }
+
 #[cfg(test)]
 mod tests {
     use super::*;
